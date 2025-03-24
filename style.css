@@ -1,5 +1,30 @@
+.body-songs {
+    background-image: url("images/space.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 .navbar-nav .nav-item {
     margin-right: 15px;
+
+}
+
+.custom-navbar2 {
+    background: url("images/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.custom-navbar3 {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 
 }
 
@@ -10,11 +35,21 @@ h1.display-5 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.main-paragraph {
+    font-style: italic;
+    font-weight: 400;
+
+}
+
 .nav-link {
     color: rgb(14, 62, 152);
 
 }
 
+.card-container {
+    margin-top: 20px; /* Navbar ile arasındaki boşluğu azaltır */
+    padding: 0; /* Gereksiz padding’i sıfırlar */
+}
 .header {
     background: url("images/IMG_20221206_135325.jpg");
     background-size: cover;
@@ -47,47 +82,79 @@ h1.display-5 {
 .inside-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
 }
 
 .overlay-box-container {
     display: flex;
     flex-wrap: wrap;
-    /* Eğer ekran dar ise, kutular alta geçebilir */
-    gap: 20px;
     justify-content: space-between;
+    padding: 10px;
+    height: 40%;
+    width: 40%;
 }
 
-.header-a {
-    background: url("images/IMG_20221206_135325.jpg");
+.main-container {
+    background-color: rgb(255, 231, 235);
+    background-image: url("images/monet1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: center;
     display: flex;
+    min-height: 200vh;
+
+
+    justify-content: center;
     align-items: center;
-    height: 200vh;
-    padding: 10px;
+
+}
+
+.main-sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .overlay-box-a {
     background-color: rgba(255, 255, 255, 0.2);
-    /*padding:10px*/
     border-radius: 10px;
-    width: 100vh;
-    height: 50vh;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.overlay-box-a h1 {
+    font-size: 22px;
+    overflow: hidden;
 }
 
 .inside-container-a {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 }
 
 .custom-header {
     font-family: 'custom-header-font', sans-serif;
     font-style: italic;
     font-size: 100px;
+
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
 
 }
 
@@ -98,11 +165,124 @@ h1.display-5 {
     /*URL to font*/
 }
 
+@font-face {
+    font-family: 'custom-card-font';
+    src: url("fonts/Pompiere-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'custom-aboutMe-font';
+    src: url("fonts/Merriweather_24pt_SemiCondensed-Italic.ttf");
+}
+
+
 .custom-footer {
     color: bisque;
     font-style: italic;
     background-color: rgb(0, 0, 57);
 }
+
+.header_v1 {
+    font-family: 'custom-aboutMe-font', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-card {
+    width: 80%; /* Daha iyi hizalanması için genişliği %80 yaptım */
+    max-width: 350px; /* Kartların maksimum genişliği */
+    height: 70%; /* Yüksekliği sabitleme, içeriğe göre ayarlasın */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.songcard-img-top {
+    height: 90%; 
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+}
+.song-card-title {
+    background-color: rgba(91, 130, 221, 0.7); /* Siyah ve %70 opaklık */
+    color: white; /* Yazıyı beyaz yap */
+    padding: 10px; /* İç boşluk ekle */
+    border-radius: 5px; /* Hafif yuvarlatılmış köşeler */
+    display: inline-block; /* Sadece başlığı kapsasın */
+}
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-title {
+    font-family: 'custom-card-font', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.shadow-box {
+    background: rgb(147, 147, 194);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+
+    /* Shadow efekti */
+}
+
+.main-container .col {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Yatayda ortalama */
+    justify-content: center;
+    /* Dikeyde ortalama */
+    text-align: center;
+    /* Metinlerin de ortalanmasını sağlar */
+
+}
+
+.middle-container1 {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main-container-songs {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 200vh;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    margin: auto;
+    
+
+
+}
+
 
 /*
 .header {
@@ -112,6 +292,12 @@ h1.display-5 {
     display: flexbox;
 
 }
+    -html-
+
+
+     <div class="col-md-5">
+                                <img src="images/me.png" class="img-fluid" alt="Me" width="100%">
+                            </div>
 
 .header_title {
     font-size: 50px;
