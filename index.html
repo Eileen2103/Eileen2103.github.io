@@ -12,25 +12,26 @@
 
 </head>
 
-<body>
+<body class="body-main">
     <nav class="navbar navbar-expand-md py-4">
         <div class="container" id="navbarNav">
             <h1 class="display-5 fw-5">Eileen's Page</h2>
                 <div id="mobile" class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto ">
-                        <li class="nav-item  ">
-                            <button class="nav-link fs-3 " href="index.html">Anasayfa
-                            </button>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="index.html">Homepage</a>
                         </li>
-                        <li class="nav-item  ">
-                            <button class="nav-link fs-3 " href="aboutMe.html">Hakkımda
-                            </button>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="aboutMe.html">About Me</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <button class="nav-link fs-3 " href="projects.html">Projelerim</button>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="projects.html">My Projects</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <button class="nav-link fs-3 " href="games.html">Oyunlarım</button>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="games.html">My Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="pokemonAPI.html">Pokemon API</a>
                         </li>
 
                     </ul>
@@ -45,12 +46,11 @@
                 <div class="col pt-5 pb-5">
                     <h1 class="display-1 fw-5 custom-header">Merhaba!</h1>
                 </div>
-                <div class="col-8 align-items-center pt-5">
-                    <p class="h2 main-paragraph"> Ben Aylin. Burada öğrendiklerimi, düşündüklerimi kişisel projelerimi,
-                        blog
-                        yazılarımı ve
-                        ürettiklerimi paylaşıyorum.Kod yazıyorum, tasarımla uğraşıyorum, bazen de uzun uzun düşünüyorum.
-                        Burası kişisel blogum, hoş geldin! </p>
+                <div class="col-8 align-items-center pt-5 px-5">
+                    <p class="h2 main-paragraph"> I'm Eileen. Here, I share what I learn, think about, my personal
+                        projects, blog posts, and the things I create.
+                        I write codes, work on designs, and sometimes just think deeply.
+                        This is my personal blog—welcome!</p>
                 </div>
             </div>
 
@@ -58,16 +58,18 @@
 
     </header>
     <main>
-        <div class="container px-10 my-4">
+        <div class="container px-10 my-4 ">
             <div class="row row-cols-1 row-cols-md-3 g-3">
                 <div class="col">
-                    <div class="card mb-4 rounded -3h-100 shadow-sm">
-                        <img src="images/Love All Serve All [Japanese Import] - 2LP _ Olive Orange.jpeg"
-                            class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Songs I'm currently listening to</h5>
+                    <a href="songs.html" class="text-decoration-none">
+                        <div class="card mb-4 rounded -3h-100 shadow-sm">
+                            <img src="images/Love All Serve All [Japanese Import] - 2LP _ Olive Orange.jpeg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Songs I'm currently listening to</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col">
@@ -93,9 +95,9 @@
 
 
     </main>
-    <footer class="py-5 bg-dark text-white custom-footer">
-        <div class="container text-center fw-italic">
-            <span>Aylin Türkyılmaz @2025</span>
+    <footer class="py-5 text-white custom-footer">
+        <div class="container text-center fw-italic custom-footer">
+            <span>Eileen @2025</span>
         </div>
 
 

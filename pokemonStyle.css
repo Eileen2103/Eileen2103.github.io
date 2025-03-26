@@ -1,0 +1,107 @@
+.body-main {
+    background-image: url("images/yellowstar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+
+
+}
+
+.text-container {
+    border-radius: 10px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(254, 254, 143);
+}
+
+.custom-button {
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ff7e5f, #feb47b);
+    /* Renk geçişi */
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.fight-button {
+    border-radius: 25px;
+    background: linear-gradient(145deg, #1e30d4, #7318b8);
+    /* Renk geçişi */
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: auto;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-button:hover {
+    background: linear-gradient(145deg, #feb47b, #ff7e5f);
+    /* Hoverda ters renk geçişi */
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2);
+    /* Hoverda daha belirgin gölge */
+    transform: translateY(-2px);
+    /* Hoverda butonu yukarı kaldır */
+}
+
+.fight-button:hover {
+    background: linear-gradient(145deg, #7318b8, #1e30d4);
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.h5 {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.button-div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: auto;
+}
+
+#pokemons1,
+#pokemons2 {
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Şeffaflık */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge */
+    margin-bottom: 10px;
+
+}
+
+#pokemon_img_user,
+#pokemon_img_computer {
+    max-width: 60%;
+    width: 350px;
+    height: auto;
+}
+
+.pokemon-div {
+    justify-content: space-between;
+    display:flex;
+}

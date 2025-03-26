@@ -1,5 +1,12 @@
 .body-songs {
-    background-image: url("images/space.png");
+    background-image: url("images/IMG_20221206_135340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.body-main {
+    background-image: url("images/IMG_20221206_135325.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,7 +58,7 @@ h1.display-5 {
     padding: 0; /* Gereksiz padding’i sıfırlar */
 }
 .header {
-    background: url("images/IMG_20221206_135325.jpg");
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
